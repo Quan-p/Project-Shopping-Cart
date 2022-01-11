@@ -3,7 +3,9 @@ import React from 'react';
 const Homepage = () => {
     return (
         <div>
-            <h1>HomePage</h1>
+            <main>
+                <h1>SFFPC Store</h1>
+            </main>
         </div>
     );
 }
