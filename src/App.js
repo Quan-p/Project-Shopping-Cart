@@ -5,10 +5,9 @@ import Homepage from './pages/Homepage';
 
 const App = () => {
   return (
-    <div>
-      <Nav />
-      <Homepage />
-    </div>
+      <div>
+        <Homepage />
+      </div>
   )
 }
 
