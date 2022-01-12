@@ -1,13 +1,17 @@
 import React from "react";
+import './css/Nav.css'
 
 const Nav = () => {
     return (
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Shop</li>
-            </ul>
-        </nav>
+        <div className = 'header'>
+            <div>
+                Title
+            </div>
+            <nav>
+                <div>Home</div>
+                <div>Shop</div>
+            </nav>
+        </div>    
     );
 }
 
