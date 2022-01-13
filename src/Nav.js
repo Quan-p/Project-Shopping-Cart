@@ -1,6 +1,7 @@
 import React from "react";
 import './css/Nav.css'
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import { ShoppingCartOutlined } from '@material-ui/icons';
 
 const Nav = () => {
     return (
@@ -15,6 +16,9 @@ const Nav = () => {
                 <Link to='/shop'>
                     <div>Shop</div>
                 </Link>
+                <button>
+                    <ShoppingCartOutlined />
+                </button>
             </nav>
         </div>    
     );
