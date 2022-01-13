@@ -1,13 +1,13 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Nav from './Nav';
 import Homepage from './pages/Homepage';
+import './css/App.css'
+import Nav from './Nav';
 
 const App = () => {
   return (
-      <div>
-        <Homepage />
-      </div>
+    <div className = 'home'>
+      <Homepage />
+    </div>
   )
 }
 
