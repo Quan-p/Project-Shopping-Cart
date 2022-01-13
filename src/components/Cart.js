@@ -1,29 +1,36 @@
 import React, { useState } from 'react';
-import SlidingPanel from 'react-sliding-side-panel';
+import SlidingPane from "react-sliding-pane";
 import { ShoppingCartOutlined } from '@material-ui/icons';
 import '../css/Cart.css'
  
 const Cart = () => {
-  const [openPanel, setOpenPanel] = useState(false);
-  return (
-    <div>
-      <div>
-        <button onClick={() => setOpenPanel(true)}>
-            <ShoppingCartOutlined />
-        </button>
-      </div>
-      <SlidingPanel
-        type={'left'}
-        isOpen={openPanel}
-        size={20}
-      >
+    const [state, setState] = useState({
+        isPaneOpen: false,
+        isPaneOpenLeft: false,
+      });
+    
+      return (
         <div>
-          <div>My Panel Content</div>
-          <button onClick={() => setOpenPanel(false)}>close</button>
+          <button onClick={() => setState({ isPaneOpen: true })}>
+            Click me to open right pane!
+          </button>
+          
+          <SlidingPane
+            className="some-custom-class"
+            overlayClassName="some-custom-overlay-class"
+            isOpen={state.isPaneOpen}
+            title="Hey, it is optional pane title.  I can be React component too."
+            subtitle="Optional subtitle."
+            onRequestClose={() => {
+              // triggered on "<" on left top click or on outside click
+              setState({ isPaneOpen: false });
+            }}
+          >
+            <div>And I am pane content. BTW, what rocks?</div>
+            <br />
+          </SlidingPane>
         </div>
-      </SlidingPanel>
-    </div>
-  );
+      );
 };
  
 export default Cart;
