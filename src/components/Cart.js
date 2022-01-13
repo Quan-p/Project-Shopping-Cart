@@ -12,7 +12,7 @@ const Cart = () => {
       return (
         <div>
           <button onClick={() => setState({ isPaneOpen: true })}>
-            Click me to open right pane!
+            <ShoppingCartOutlined />
           </button>
           
           <SlidingPane
