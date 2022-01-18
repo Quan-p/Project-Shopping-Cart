@@ -1,10 +1,17 @@
 import React from "react";
+import caseData from '../../assets/caseData';
 
 const Cases = () => {
     return (
         <div>
-             <h1>Cases</h1>
-             <div>Test</div>
+            {caseData.map((element) => (
+                    <div className={ 'img-container' }>
+                        <img src={element.src} alt={element.name}/>
+                        <p className={ 'title' }>
+                            {element.name}
+                        </p>
+                    </div>
+            ))}
         </div>
     );
 }

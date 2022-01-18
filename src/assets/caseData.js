@@ -10,7 +10,7 @@ const cases = [
         id: 'vk3',
         name: 'Velka 3',
         price: '$159.99',
-        image: vk3,
+        src: vk3,
     },
     {
         category: 'Cases',
@@ -18,7 +18,7 @@ const cases = [
         id: 'formd',
         name: 'FormD T1',
         price: '$175.00',
-        image: formd,
+        src: formd,
     },
     {
         category: 'Cases',
@@ -26,7 +26,7 @@ const cases = [
         id: 'mesh',
         name: 'SSUPD Meshlicious',
         price: '$109.99',
-        image: mesh,
+        src: mesh,
     },
     {
         category: 'Cases',
@@ -34,7 +34,7 @@ const cases = [
         id: 'ncase',
         name: 'NCASE M1',
         price: '$200.00',
-        image: ncase,
+        src: ncase,
     },
 ];
 
