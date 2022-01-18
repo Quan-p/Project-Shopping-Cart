@@ -1,3 +1,36 @@
 body {
     background-color: #FFF;
 }
+
+main {
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+img {
+    width: 270px;
+    min-height: 80%;
+    object-fit: cover;
+}
+
+.shop-categories {
+    float: left;
+    width: 200px;
+    height: 500px;
+}
