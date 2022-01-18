@@ -10,10 +10,18 @@ const Shop = () => (
             <Link to='cases'>
                 <p>Cases</p>
             </Link>
-            <p>Processors</p>
-            <p>Motherboards</p>
-            <p>Video Cards</p>
-            <p>Memory</p>
+            <Link to='processors'>
+                <p>Processors</p>
+            </Link>
+            <Link to='motherboards'>
+                <p>Motherboards</p>
+            </Link>
+            <Link to='videocards'>
+                <p>Video Cards</p>
+            </Link>
+            <Link to='memory'>
+                <p>Memory</p>
+            </Link>
         </div>
         
     </main>
