@@ -1,5 +1,6 @@
 import React from "react";
 import caseData from '../../assets/caseData';
+import Counter from "../../components/Counter";
 
 const Cases = () => {
     return (
@@ -13,6 +14,7 @@ const Cases = () => {
                         <p>
                             {element.price}
                         </p>
+                        <Counter />
                     </div>
             ))}
         </div>

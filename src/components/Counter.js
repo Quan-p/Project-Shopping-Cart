@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Counter = () => {
-    let [num, setNum] = useState(1);
+    let [num, setNum] = useState(0);
 
     let incNum = () => {
         if (num < 10) {
