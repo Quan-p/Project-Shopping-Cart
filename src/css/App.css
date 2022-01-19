@@ -24,7 +24,7 @@ main {
 }
 
 img {
-    width: 270px;
+    width: 70%;
     min-height: 80%;
     object-fit: cover;
 }
