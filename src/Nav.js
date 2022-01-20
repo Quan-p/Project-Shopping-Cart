@@ -1,7 +1,7 @@
 import React from "react";
 import './css/Nav.css'
 import { Link } from 'react-router-dom';
-import Cart from "./components/Cart";
+import ShoppingPane from "./components/ShoppingPane";
 
 const Nav = () => {
     return (
@@ -17,7 +17,7 @@ const Nav = () => {
                     <div>Shop</div>
                 </Link>
                 <div>
-                    <Cart /> 
+                    <ShoppingPane /> 
                 </div>
             </nav>
             

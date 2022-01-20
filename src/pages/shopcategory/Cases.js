@@ -6,7 +6,7 @@ const Cases = () => {
     return (
         <div className={ 'wrapper' }>
             {caseData.map((element) => (
-                    <div className={ 'img-container' }>
+                    <div className={ 'img-container' } key={caseData.id}>
                         <img src={element.src} alt={element.name}/>
                         <p className={ 'title' }>
                             {element.name}
