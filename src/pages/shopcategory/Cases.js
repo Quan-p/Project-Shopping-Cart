@@ -7,14 +7,19 @@ const Cases = () => {
         <div className={ 'wrapper' }>
             {caseData.map((element) => (
                     <div className={ 'img-container' } key={caseData.id}>
-                        <img src={element.src} alt={element.name}/>
-                        <p className={ 'title' }>
-                            {element.name}
-                        </p>
+                        <div>
+                            <img src={element.src} alt={element.name}/>
+                            <h3 className={ 'title' }>{element.name}</h3>
+                        </div>
+                        
                         <p>
                             {element.price}
+                            <Counter />
                         </p>
-                        <Counter />
+                        
+                        <div>
+                            <button>Add to Cart</button>
+                        </div>
                     </div>
             ))}
         </div>

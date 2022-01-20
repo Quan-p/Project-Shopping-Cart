@@ -9,7 +9,8 @@ main {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-template-rows: 2, 1fr;
+    gap: 10px;
 }
 
 .img-container {
@@ -27,6 +28,10 @@ img {
     width: 70%;
     min-height: 80%;
     object-fit: cover;
+}
+
+.title {
+    text-align: center;
 }
 
 .shop-categories {
