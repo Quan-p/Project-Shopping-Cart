@@ -3,12 +3,14 @@ import SlidingPane from "react-sliding-pane";
 import { ShoppingCartOutlined } from '@material-ui/icons';
 import '../css/ShoppingPane.css'
  
-const ShoppingPane = () => {
+const ShoppingPane = (props) => {
     const [state, setState] = useState({
         isPaneOpen: false,
         isPaneOpenLeft: false,
       });
     
+    const { cartItems } = props;
+
       return (
         <div>
           <button onClick={() => setState({ isPaneOpen: true })}>
@@ -19,14 +21,12 @@ const ShoppingPane = () => {
             className="some-custom-class"
             overlayClassName="some-custom-overlay-class"
             isOpen={state.isPaneOpen}
-            title="Hey, it is optional pane title.  I can be React component too."
-            subtitle="Optional subtitle."
+            title="Cart Items"
             onRequestClose={() => {
-              // triggered on "<" on left top click or on outside click
               setState({ isPaneOpen: false });
             }}
           >
-            <div>And I am pane content. BTW, what rocks?</div>
+            <div>{cartItems.length === 0 && <div>Cart Is Empty</div>}</div>
             <br />
           </SlidingPane>
         </div>
