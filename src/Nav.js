@@ -12,6 +12,8 @@ const Nav = () => {
                 x.id === product.id ? {...exist, qty: exist.qty + 1} : x
             )
             );
+        } else {
+            setCartItems([...cartItems, {...product, qty: 1}]);
         }
     }
 
@@ -28,7 +30,7 @@ const Nav = () => {
                     <div>Shop</div>
                 </Link>
                 <div>
-                    <ShoppingPane cartItems={cartItems}/> 
+                    <ShoppingPane onAdd = {onAdd} cartItems={cartItems}/> 
                 </div>
             </nav>
             

@@ -2,7 +2,9 @@ import React from "react";
 import caseData from '../../assets/caseData';
 import Counter from "../../components/Counter";
 
-const Cases = () => {
+const Cases = (props) => {
+    const {onAdd} = props; 
+
     return (
         <div className={ 'wrapper' }>
             {caseData.map((element) => (
@@ -18,7 +20,7 @@ const Cases = () => {
                         </p>
                         
                         <div>
-                            <button>Add to Cart</button>
+                            <button onClick={onAdd}>Add to Cart</button>
                         </div>
                     </div>
             ))}
