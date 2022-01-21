@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import RouteSwitch from "./RouteSwitch";
+import CartContextProvider from './components/cart-context';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <CartContextProvider>
     <RouteSwitch />
-  </React.StrictMode>,
-  document.getElementById("root")
+  </CartContextProvider>
+
+  ,document.getElementById("root")
 );
