@@ -1,9 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import caseData from '../../assets/caseData';
 import Counter from "../../components/Counter";
 
 const Cases = (props) => {
     const {onAdd} = props; 
+
+    const [cart, setCart] = useState([]);
+    const [itemIndex, setItemIndex] = useState(1);
 
     return (
         <div className={ 'wrapper' }>
@@ -20,7 +23,14 @@ const Cases = (props) => {
                         </p>
                         
                         <div>
-                            <button onClick={onAdd}>Add to Cart</button>
+                        <button
+                            onClick={() => {
+                                setCart([...cart, ` item ${itemIndex}`]);
+                                setItemIndex(itemIndex + 1);
+                            }}
+                        >
+                        Add to Cart
+                        </button>
                         </div>
                     </div>
             ))}

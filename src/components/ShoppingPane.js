@@ -9,7 +9,7 @@ const ShoppingPane = (props) => {
         isPaneOpenLeft: false,
       });
     
-    const { cartItems, onAdd } = props;
+    const { cart, onAdd } = props;
 
       return (
         <div>
@@ -26,12 +26,11 @@ const ShoppingPane = (props) => {
               setState({ isPaneOpen: false });
             }}
           >
-            <div>{cartItems.length === 0 && <div>Cart Is Empty</div>}</div>
-            {cartItems.map((item) => (
-              <div key={item.id} className={'row'}>
-                <div>{item.name}</div>
-              </div>
-            ))}
+            <div>
+              {/* {cart.length === 0 && <p>Cart: (empty)</p>}
+              {cart.length > 0 && <p>Cart: {cart.toString()}</p>} */}
+            </div>
+            
             <br />
           </SlidingPane>
         </div>

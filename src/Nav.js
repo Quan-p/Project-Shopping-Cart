@@ -4,19 +4,6 @@ import { Link } from 'react-router-dom';
 import ShoppingPane from "./components/ShoppingPane";
 
 const Nav = () => {
-    const [cartItems, setCartItems] = useState([]);
-    const onAdd = (product) => {
-        const exist = cartItems.find(x => x.id === product.id);
-        if (exist) {
-            setCartItems(cartItems.map((x) =>
-                x.id === product.id ? {...exist, qty: exist.qty + 1} : x
-            )
-            );
-        } else {
-            setCartItems([...cartItems, {...product, qty: 1}]);
-        }
-    }
-
     return (
         <div className = 'header'>
             <div>
@@ -31,7 +18,7 @@ const Nav = () => {
                 </Link>
                 <div>
                     <span className='cartCount'>5</span>
-                    <ShoppingPane onAdd = {onAdd} cartItems={cartItems}/> 
+                    <ShoppingPane /> 
                 </div>
             </nav>
             
