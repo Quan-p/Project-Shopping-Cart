@@ -30,6 +30,7 @@ const Nav = () => {
                     <div>Shop</div>
                 </Link>
                 <div>
+                    <span className='cartCount'>5</span>
                     <ShoppingPane onAdd = {onAdd} cartItems={cartItems}/> 
                 </div>
             </nav>
