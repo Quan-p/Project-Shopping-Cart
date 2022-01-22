@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Homepage from './pages/Homepage';
+import Header from './components/header/header';
 import './css/App.scss'
 
 const App = () => {
   return (
     <div className = 'home'>
-      <Homepage />
+      <Header />
     </div>
   )
 }
