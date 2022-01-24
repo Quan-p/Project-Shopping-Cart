@@ -33,3 +33,5 @@ const SHOP_DATA = [
         src: ncase,
     },  
 ]
+
+export default SHOP_DATA;
