@@ -5,8 +5,8 @@ import './cart-icon.styles.scss';
 const CartIcon = () => {
     return (
         <div className='cart-container'>
-            <ShoppingCartOutlined className = 'cart-icon' alt='shopping-cart-icon'></ShoppingCartOutlined>
-            <span className='cart-count'>5</span>
+            <ShoppingCartOutlined className = 'cart-icon' alt='shopping-cart-icon' />
+            <span className='cart-count'> 5 </span>
         </div>
     );
 }
