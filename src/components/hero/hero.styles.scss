@@ -1,6 +1,8 @@
 .hero-image {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url('../../assets/images/background/background.jpg') center/cover no-repeat;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .hero-title {
