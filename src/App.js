@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from './components/footer/footer';
 import Header from './components/header/header';
 import Hero from './components/hero/hero';
 import MainSection from './components/main-section/main-section';
@@ -10,6 +11,7 @@ const App = () => {
       <Header />
       <Hero />
       <MainSection />
+      <Footer />
     </div>
   )
 }
