@@ -4,10 +4,10 @@ import SHOP_DATA from '../shop';
 export const ProductsContext = createContext();
 
 const ProductsContextProvider = ({ children }) => {
-    const [proudcts] = useState(SHOP_DATA);
+    const [products] = useState(SHOP_DATA);
 
     return (
-        <ProductsContext.Provider value={{ proudcts }}>
+        <ProductsContext.Provider value={{ products }}>
             {
                 children
             }
