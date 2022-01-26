@@ -8,7 +8,7 @@ const SHOP_DATA = [
         id: '1',
         title: 'Velka 3',
         description: 'This case is ideal for those who want the smallest physically possible gaming PC. Made from thick steel and aluminum panels to give each part and the complete build a solid feel.',
-        price: 159.9,
+        price: 159.99,
         src: vk3,
     },
     {
