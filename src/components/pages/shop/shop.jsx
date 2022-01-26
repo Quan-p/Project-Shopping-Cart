@@ -11,14 +11,17 @@ const Shop = () => {
     ));
 
     return (
-        <div className='product-list-container'>
-            <h2 className='product-list-title'>Shop</h2>
-            <div className='product-list'>
-                {
-                    allProducts
-                }
+        <Layout>
+            <div className='product-list-container'>
+                <h2 className='product-list-title'>Shop</h2>
+                <div className='product-list'>
+                    {
+                        allProducts
+                    }
+                </div>
             </div>
-        </div>
+        </Layout>
+        
     )
 }
 
