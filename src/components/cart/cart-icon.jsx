@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { ShoppingCartOutlined } from '@material-ui/icons';
+import { CartContext } from "../../context/cart-context";
 import './cart-icon.styles.scss';
 
 const CartIcon = () => {
+    const { itemCount } = useContext(CartContext);
     return (
         <div className='cart-container'>
             <ShoppingCartOutlined className = 'cart-icon' alt='shopping-cart-icon' />
-            <span className='cart-count'> 5 </span>
+            {
+                itemCount > 0 ? <span className='cart-count'> { itemCount } </span> : null
+            }
         </div>
     );
 }
