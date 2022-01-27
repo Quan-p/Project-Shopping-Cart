@@ -9,8 +9,6 @@ const ShoppingPane = (props) => {
         isPaneOpenLeft: false,
       });
     
-    const { cart, onAdd } = props;
-
       return (
         <div>
           <button onClick={() => setState({ isPaneOpen: true })}>
