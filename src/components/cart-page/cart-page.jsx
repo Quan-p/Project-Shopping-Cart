@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react';
-import { ShoppingCartOutlined } from '@material-ui/icons';
 import Layout from '../shared/layout';
 import { CartContext } from '../../context/cart-context';
 import CartItem from './cart-items';
+import Total from './total';
 import './cart-page.styles.scss'
  
 const CartPage = () => { 
@@ -21,6 +21,7 @@ const CartPage = () => {
                       cartItems.map(item => <CartItem { ...item } key={item.id}/>) 
                     }
                   </div>
+                  <Total itemCount={itemCount} total={total} />
                 </div>
               </>
             }
