@@ -1,38 +1,32 @@
-import React, { useState } from 'react';
-import SlidingPane from "react-sliding-pane";
+import React, { useContext, useState } from 'react';
 import { ShoppingCartOutlined } from '@material-ui/icons';
-import '../css/ShoppingPane.css'
+import Layout from '../shared/layout';
+import { CartContext } from '../../context/cart-context';
+import CartItem from './cart-items';
+import './cart-page.styles.scss'
  
-const ShoppingPane = (props) => {
-    const [state, setState] = useState({
-        isPaneOpen: false,
-        isPaneOpenLeft: false,
-      });
-    
-      return (
-        <div>
-          <button onClick={() => setState({ isPaneOpen: true })}>
-            <ShoppingCartOutlined />
-          </button>
-          
-          <SlidingPane
-            className="some-custom-class"
-            overlayClassName="some-custom-overlay-class"
-            isOpen={state.isPaneOpen}
-            title="Cart Items"
-            onRequestClose={() => {
-              setState({ isPaneOpen: false });
-            }}
-          >
-            <div>
-              {/* {cart.length === 0 && <p>Cart: (empty)</p>}
-              {cart.length > 0 && <p>Cart: {cart.toString()}</p>} */}
-            </div>
-            
-            <br />
-          </SlidingPane>
-        </div>
-      );
+const CartPage = () => { 
+    const { cartItems, itemCount, total, } = useContext(CartContext);
+    return (
+      <Layout>
+          <>
+            <h1>Cart</h1>
+            {
+              cartItems.length === 0 ? <div className='empty-cart'>Your Cart is Empty </div>
+              :
+              <>
+                <div className='cart-page'>
+                  <div className='cart-item-container'>
+                    {
+                      cartItems.map(item => <CartItem { ...item } key={item.id}/>) 
+                    }
+                  </div>
+                </div>
+              </>
+            }
+        </>
+      </Layout>
+    );
 };
  
-export default ShoppingPane;
+export default CartPage;
