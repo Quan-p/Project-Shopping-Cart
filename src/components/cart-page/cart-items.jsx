@@ -7,8 +7,8 @@ const CartItem = (product) => {
     const { title, src, price, quantity } = product;
 
     return (
-        <div>
-            <div>
+        <div className='cart-item'>
+            <div className='item-image'>
                 <img src={src} alt='product' />
             </div>
             <div className='name-price'>
@@ -19,18 +19,18 @@ const CartItem = (product) => {
                 <p>{`Quantity: ${quantity}`}</p>
             </div>
             <div className='btns-container'>
-                <button>
+                <button className='btn-increase'>
                     <AddCircleIcon />
                 </button>
                 {
                     quantity === 1 &&
-                    <button>
+                    <button className='btn-trash'>
                         <DeleteIcon />
                     </button>
                 }
                 {
                     quantity > 1 &&
-                    <button>
+                    <button className='btn-decrease'>
                         <RemoveCircleIcon />
                     </button>
                 }
