@@ -2,7 +2,7 @@ import React from "react";
 import { AddCircle, RemoveCircleOutline, DeleteOutline, } from '@material-ui/icons';
 
 const CartItem = (props) => {
-    const { title, src, price, description, quantity, id, increase, decrease } = props;
+    const { title, src, price, description, quantity, id, increase, decrease, removeProduct } = props;
     const product = { title, src, price, quantity, id, description }
 
     return (
@@ -23,7 +23,7 @@ const CartItem = (props) => {
                 </button>
                 {
                     quantity === 1 &&
-                    <button className='btn-trash'>
+                    <button className='btn-trash' onClick={() => removeProduct(product)}>
                         <DeleteOutline />
                     </button>
                 }
