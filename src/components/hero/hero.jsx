@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './hero.styles.scss'
 
 const Hero = () => {
@@ -10,9 +11,11 @@ const Hero = () => {
                         SFFPC
                     </h1>
                     <div className='shop-now-btn'>
-                        <button className='button is-black' id='shop-now'>
-                            SHOP NOW
-                        </button>
+                        <Link to='/shop'>
+                            <button className='button is-black' id='shop-now' >
+                                SHOP NOW
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>
