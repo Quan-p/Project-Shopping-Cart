@@ -1,8 +1,9 @@
 import React from "react";
 import { AddCircle, RemoveCircleOutline, DeleteOutline, } from '@material-ui/icons';
 
-const CartItem = (product) => {
-    const { title, src, price, quantity } = product;
+const CartItem = (props) => {
+    const { title, src, price, description, quantity, id, increase, decrease } = props;
+    const product = { title, src, price, quantity, id, description }
 
     return (
         <div className='cart-item'>
@@ -17,7 +18,7 @@ const CartItem = (product) => {
                 <p>{`Quantity: ${quantity}`}</p>
             </div>
             <div className='btns-container'>
-                <button className='btn-increase'>
+                <button className='btn-increase' onClick={() => increase(product)}>
                     <AddCircle />
                 </button>
                 {
@@ -28,7 +29,7 @@ const CartItem = (product) => {
                 }
                 {
                     quantity > 1 &&
-                    <button className='btn-decrease'>
+                    <button className='btn-decrease' onClick={() => decrease(product)}>
                         <RemoveCircleOutline />
                     </button>
                 }
