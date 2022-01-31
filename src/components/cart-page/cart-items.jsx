@@ -21,18 +21,12 @@ const CartItem = (props) => {
                 <button className='btn-increase' onClick={() => increase(product)}>
                     <AddCircle />
                 </button>
-                {
-                    quantity === 1 &&
-                    <button className='btn-trash' onClick={() => removeProduct(product)}>
-                        <DeleteOutline />
-                    </button>
-                }
-                {
-                    quantity > 1 &&
-                    <button className='btn-decrease' onClick={() => decrease(product)}>
-                        <RemoveCircleOutline />
-                    </button>
-                }
+                <button className='btn-decrease' onClick={() => decrease(product)}>
+                    <RemoveCircleOutline />
+                </button>
+                <button className='btn-trash' onClick={() => removeProduct(product)}>
+                    <DeleteOutline />
+                </button>
             </div>
         </div>
     );
