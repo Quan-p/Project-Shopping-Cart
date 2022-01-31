@@ -1,5 +1,5 @@
 import React from "react";
-import { AddCircle, RemoveCircleOutline, DeleteOutline, } from '@material-ui/icons';
+import { RemoveCircleOutline, DeleteOutline, AddCircleOutline, } from '@material-ui/icons';
 
 const CartItem = (props) => {
     const { title, src, price, description, quantity, id, increase, decrease, removeProduct } = props;
@@ -19,7 +19,7 @@ const CartItem = (props) => {
             </div>
             <div className='btns-container'>
                 <button className='btn-increase' onClick={() => increase(product)}>
-                    <AddCircle />
+                    <AddCircleOutline />
                 </button>
                 <button className='btn-decrease' onClick={() => decrease(product)}>
                     <RemoveCircleOutline />
