@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Project-Shopping-Cart/static/css/main.d5eab9e7.css",
+    "main.js": "/Project-Shopping-Cart/static/js/main.45b89d47.js",
+    "static/media/background.jpg": "/Project-Shopping-Cart/static/media/background.f5fd78abc30ba5714381.jpg",
+    "static/media/gigabyte.png": "/Project-Shopping-Cart/static/media/gigabyte.fef2854159ed28771faa.png",
+    "static/media/black_ridge.jpg": "/Project-Shopping-Cart/static/media/black_ridge.178f42d369300b45153f.jpg",
+    "static/media/asrock.png": "/Project-Shopping-Cart/static/media/asrock.a30796c07b76be988038.png",
+    "static/media/mesh.png": "/Project-Shopping-Cart/static/media/mesh.9757afef73b4a299d27b.png",
+    "static/media/formd.png": "/Project-Shopping-Cart/static/media/formd.8790fbeb824a3045b6f4.png",
+    "static/media/ncase.png": "/Project-Shopping-Cart/static/media/ncase.7553bb4e5f9193fcc87f.png",
+    "static/media/noctua.jpg": "/Project-Shopping-Cart/static/media/noctua.c5cc7904f614fa2e4d1a.jpg",
+    "static/media/main.jpg": "/Project-Shopping-Cart/static/media/main.bbd2b295caa8301dca4a.jpg",
+    "static/media/vk3.jpg": "/Project-Shopping-Cart/static/media/vk3.72d6f6073a16cc3b4b3a.jpg",
+    "index.html": "/Project-Shopping-Cart/index.html",
+    "main.d5eab9e7.css.map": "/Project-Shopping-Cart/static/css/main.d5eab9e7.css.map",
+    "main.45b89d47.js.map": "/Project-Shopping-Cart/static/js/main.45b89d47.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5eab9e7.css",
+    "static/js/main.45b89d47.js"
+  ]
+}
